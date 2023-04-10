@@ -1,10 +1,10 @@
 import * as React from "react";
-import {ReactNode} from "react";
 import {styled} from "@mui/material/styles";
 import AuthenticationHome from "../../layout/Authentication";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
+import {RoutesLink} from "routes";
 
 const FormContainer = styled("div")({
     flex: "1 1 0",
@@ -46,14 +46,14 @@ const Form = styled("form")({
     },
 });
 
-function Signin(): ReactNode {
+function Signin() {
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         // handle form submission logic here
     };
     return (
         <AuthenticationHome>
-            548
+
             <FormContainer>
                 <Form onSubmit={handleSubmit}>
                     <TextField
@@ -81,8 +81,8 @@ function Signin(): ReactNode {
                     <Button type="submit" variant="contained" sx={{mt: 3, mb: 2}}>
                         Sign in
                     </Button>
-                    <Link href="#" variant="body2">
-                        Already signed up? Log in here
+                    <Link href={RoutesLink.REGISTER} variant="body2">
+                        Don't have an account? Sign Up
                     </Link>
                 </Form>
             </FormContainer>
