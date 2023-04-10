@@ -1,6 +1,6 @@
 import {ReactNode} from "react";
 import {styled} from "@mui/material/styles";
-
+import bg from "assets/imgs/bg.jpeg";
 const Container = styled("div")`
   display: flex;
   justify-content: center;
@@ -29,7 +29,7 @@ const ImageWrapper = styled("div")({
 });
 
 const Image = styled("div")({
-    backgroundImage: "url(https://source.unsplash.com/random)",
+    backgroundImage: `url(${bg})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "100%",
