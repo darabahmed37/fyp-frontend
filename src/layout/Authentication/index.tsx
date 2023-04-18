@@ -1,6 +1,8 @@
 import {ReactNode} from "react";
 import {styled} from "@mui/material/styles";
 import bg from "assets/imgs/bg.jpeg";
+import {Outlet} from "react-router-dom";
+
 const Container = styled("div")`
   display: flex;
   justify-content: center;
@@ -36,11 +38,9 @@ const Image = styled("div")({
     borderRadius: "20px 0 0 20px",
 });
 
-type IAuthenticationHomeProps = {
-    children?: ReactNode | null;
-};
 
-function AuthenticationHome({children}: IAuthenticationHomeProps) {
+
+function Authentication() {
 
     return (
         <Container>
@@ -48,10 +48,10 @@ function AuthenticationHome({children}: IAuthenticationHomeProps) {
                 <ImageWrapper>
                     <Image/>
                 </ImageWrapper>
-                {children}
+                <Outlet/>
             </LoginPage>
         </Container>
     );
 }
 
-export default AuthenticationHome;
+export default Authentication;

@@ -1,6 +1,6 @@
 import * as React from "react";
 import {styled} from "@mui/material/styles";
-import AuthenticationHome from "../../layout/Authentication";
+import Authentication from "../../layout/Authentication";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
@@ -52,7 +52,7 @@ function Signin() {
         // handle form submission logic here
     };
     return (
-        <AuthenticationHome>
+
 
             <FormContainer>
                 <Form onSubmit={handleSubmit}>
@@ -86,7 +86,7 @@ function Signin() {
                     </Link>
                 </Form>
             </FormContainer>
-        </AuthenticationHome>
+
     );
 }
 

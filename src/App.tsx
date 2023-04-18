@@ -5,25 +5,33 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import SignIn from "pages/sign-in";
 import SignUp from "pages/sign-up";
 import {RoutesLink} from "./routes";
+import Authentication from "./layout/Authentication";
 
 interface RouteList {
-    path: string;
+    path?: string;
     element?: JSX.Element;
     children?: RouteList[];
+    index?: boolean;
 }
 
 const routes: RouteList[] = [
     {
         path: "/auth",
+        element: <Authentication/>,
         children: [
             {
                 path: RoutesLink.LOGIN,
                 element: <SignIn/>,
+
             },
             {
                 path: RoutesLink.REGISTER,
                 element: <SignUp/>,
             },
+            {
+                element: <SignIn/>,
+                index: true,
+            }
         ],
     },
 ];
@@ -37,7 +45,7 @@ function createRoutes(routes: RouteList[]) {
                 </Route>
             );
         }
-        return <Route path={route.path} element={route.element} key={index}/>;
+        return <Route path={route.path} element={route.element} key={index} index={route.index}/>;
     });
 }
 
