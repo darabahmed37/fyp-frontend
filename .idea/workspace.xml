@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d128cdf-1cce-43aa-90e9-1eb5f2f80508" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/fyp-frontend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fyp-frontend.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Authentication/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Authentication/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/sign-in/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sign-in/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/sign-up/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sign-up/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +100,7 @@
       <workItem from="1681026777509" duration="11752000" />
       <workItem from="1681103005276" duration="280000" />
       <workItem from="1681108201850" duration="1223000" />
-      <workItem from="1681797215597" duration="1767000" />
+      <workItem from="1681797215597" duration="3113000" />
     </task>
     <servers />
   </component>
