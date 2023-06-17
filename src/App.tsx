@@ -2,8 +2,7 @@ import {FC} from "react";
 import {ThemeProvider, Typography} from "@mui/material";
 import theme from "./theme";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import SignIn from "pages/sign-in";
-import SignUp from "pages/sign-up";
+import {SignIn, SignUp} from "pages";
 import {RoutesLink} from "./routes";
 import Authentication from "./layout/Authentication";
 

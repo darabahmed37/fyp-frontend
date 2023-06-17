@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d128cdf-1cce-43aa-90e9-1eb5f2f80508" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/dashboard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redirect.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/sign-in/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sign-in.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/sign-up/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sign-up.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +59,8 @@
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/usr/local/lib/node_modules/prettier",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Language Defaults",
-    "ts.external.directory.path": "/home/dev/PycharmProjects/fyp-frontend/node_modules/typescript/lib",
+    "settings.editor.selected.configurable": "editing.templates",
+    "ts.external.directory.path": "/home/darab/WebstormProjects/fyp-frontend/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -101,10 +106,25 @@
       <workItem from="1681103005276" duration="280000" />
       <workItem from="1681108201850" duration="1223000" />
       <workItem from="1681797215597" duration="3113000" />
+      <workItem from="1686980822463" duration="16000" />
+      <workItem from="1686982090319" duration="11000" />
+      <workItem from="1686982269483" duration="25000" />
+      <workItem from="1686986876436" duration="1599000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
