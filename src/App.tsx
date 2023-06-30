@@ -1,23 +1,25 @@
-import {FC} from "react";
+import {FC, ReactNode} from "react";
 import {ThemeProvider, Typography} from "@mui/material";
 import theme from "./theme";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
 import {SignIn, SignUp} from "pages";
 import {RoutesLink} from "./routes";
 import Authentication from "./layout/Authentication";
+import {PrivateRoutes, PublicRoutes} from "./components/protected";
 
-interface RouteList {
-    path?: string;
-    element?: JSX.Element;
-    children?: RouteList[];
+export interface IRoute {
+    path: string;
+    element: ReactNode;
+    child?: IRoute[];
     index?: boolean;
+    protected?: boolean;
 }
 
-const routes: RouteList[] = [
+const routes: IRoute[] = [
     {
         path: "/auth",
         element: <Authentication/>,
-        children: [
+        child: [
             {
                 path: RoutesLink.LOGIN,
                 element: <SignIn/>,
@@ -30,23 +32,41 @@ const routes: RouteList[] = [
             {
                 element: <SignIn/>,
                 index: true,
+                path: "",
             }
         ],
     },
 ];
 
-function createRoutes(routes: RouteList[]) {
-    return routes.map((route, index) => {
-        if (route.children) {
-            return (
-                <Route path={route.path} element={route.element} key={index}>
-                    {createRoutes(route.children)}
+export function createRoutes(Routes: IRoute[]) {
+    let outputRoutes: ReactNode[] = Routes.map((route, index) => {
+        if (route.child === undefined) {
+            return route.protected ? (
+                <Route element={<PrivateRoutes/>} key={index}>
+                    <Route {...route} key={index}/>
                 </Route>
+            ) : (
+                <Route {...route} key={index}/>
             );
         }
-        return <Route path={route.path} element={route.element} key={index} index={route.index}/>;
+        return route.protected ? (
+            <Route element={<PrivateRoutes/>} key={index}>
+                <Route path={route.path} key={index} element={route.element}>
+                    {createRoutes(route.child)}
+                </Route>
+            </Route>
+        ) : (
+            <Route element={<PublicRoutes/>} key={index}>
+                <Route path={route.path} key={index} element={route.element}>
+                    {createRoutes(route.child)}
+                </Route>
+            </Route>
+        );
     });
+    outputRoutes.push(<Route key={3000} path="*" element={<Typography variant={"h1"}>404</Typography>}/>);
+    return outputRoutes;
 }
+
 
 const App: FC = () => {
     return (
@@ -54,10 +74,7 @@ const App: FC = () => {
             <BrowserRouter>
                 <Routes>
                     {createRoutes(routes)}
-                    <Route
-                        path="*"
-                        element={<Typography variant={"h1"}>404</Typography>}
-                    />
+
                 </Routes>
             </BrowserRouter>
         </ThemeProvider>

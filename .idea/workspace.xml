@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d128cdf-1cce-43aa-90e9-1eb5f2f80508" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/dashboard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/redirect.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/authentication.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/sign-in/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sign-in.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/sign-up/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sign-up.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/redirect.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/protected.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/sign-up.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sign-up.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,13 +54,15 @@
     "last_opened_file_path": "/home/dev/PycharmProjects/fyp-frontend",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/usr/local/lib/node_modules/prettier",
-    "settings.editor.selected.configurable": "editing.templates",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Language Defaults",
     "ts.external.directory.path": "/home/darab/WebstormProjects/fyp-frontend/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -70,6 +73,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src/layouts/authentication-home" />
     </key>
@@ -110,6 +114,11 @@
       <workItem from="1686982090319" duration="11000" />
       <workItem from="1686982269483" duration="25000" />
       <workItem from="1686986876436" duration="1599000" />
+      <workItem from="1686988572379" duration="4477000" />
+      <workItem from="1687247739292" duration="1468000" />
+      <workItem from="1687768288422" duration="136000" />
+      <workItem from="1687768432643" duration="1696000" />
+      <workItem from="1688117690451" duration="3902000" />
     </task>
     <servers />
   </component>
