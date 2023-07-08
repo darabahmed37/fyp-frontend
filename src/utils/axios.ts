@@ -3,7 +3,7 @@ import axios, {AxiosError, AxiosInstance, AxiosRequestConfig} from "axios";
 
 import {BASE_BACKEND_URL} from "config";
 import {getAccessToken, getRefreshToken, logOut, setAccessToken} from "utils/user";
-import {refreshAccessToken} from "utils/authentication";
+
 
 function AuthorizationHeader(config: AxiosRequestConfig) {
     return {
@@ -128,3 +128,9 @@ export const patchRequest = (route: string, data = {}, instance = axiosApiInstan
             return failedResponse(error);
         });
 };
+export async function refreshAccessToken(refresh_token: string) {
+    return postRequest("/auth/refresh", {
+        refresh_token: refresh_token
+    })
+
+}

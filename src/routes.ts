@@ -5,9 +5,3 @@ export enum RoutesLink {
 }
 
 
-/*
-*
-*
-git config credential.password "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"
-
-* */

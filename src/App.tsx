@@ -3,9 +3,9 @@ import {ThemeProvider, Typography} from "@mui/material";
 import theme from "./theme";
 import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
 import {Dashboard, SignIn, SignUp} from "pages";
-import {RoutesLink} from "./routes";
+import {RoutesLink} from "routes";
 import Authentication from "./layout/Authentication";
-import {PrivateRoutes, PublicRoutes} from "./components/protected";
+import {PrivateRoutes, PublicRoutes} from "components/protected";
 
 export interface IRoute {
     path: string;
