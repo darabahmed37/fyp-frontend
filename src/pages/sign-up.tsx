@@ -91,6 +91,8 @@ function SignUp() {
       password: data["Password"],
       dob: data["Date of birth"],
       role: data["Role"],
+    }).then(() => {
+      window.location.href = "/";
     });
   }
 
