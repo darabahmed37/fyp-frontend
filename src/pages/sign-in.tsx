@@ -4,7 +4,8 @@ import Authentication from "layout/Authentication";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
-import {RoutesLink} from "../routes";
+import {RoutesLink} from "routes";
+import {useState} from "react";
 
 const FormContainer = styled("div")({
     flex: "1 1 0",
@@ -47,6 +48,7 @@ const Form = styled("form")({
 });
 
 function SignIn() {
+    const [userName, setUserName] = useState<string>("")
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         // handle form submission logic here
@@ -65,6 +67,10 @@ function SignIn() {
                     id="username"
                     name="username"
                     autoComplete="username"
+                    value={userName}
+                    onChange={e => {
+                        setUserName(e.target.value)
+                    }}
                     autoFocus
                 />
                 <TextField

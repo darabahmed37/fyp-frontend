@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d128cdf-1cce-43aa-90e9-1eb5f2f80508" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utils/authentication.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/axios.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/user.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/redirect.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/protected.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/sign-up.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sign-up.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/protected.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/protected.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/sign-in.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sign-in.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/authentication.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/authentication.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,15 +26,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="package.json" />
         <option value="CSS File" />
         <option value="TypeScript JSX File" />
+        <option value="package.json" />
         <option value="TypeScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBowerSettings">
+    <bower-package value="" />
+    <bower.json value="" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -51,7 +59,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/dev/PycharmProjects/fyp-frontend",
+    "last_opened_file_path": "/home/darab/Desktop/fyp-frontend",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
@@ -62,8 +70,8 @@
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/usr/local/lib/node_modules/prettier",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Language Defaults",
-    "ts.external.directory.path": "/home/darab/WebstormProjects/fyp-frontend/node_modules/typescript/lib",
+    "settings.editor.selected.configurable": "preferences.sourceCode.TypeScript",
+    "ts.external.directory.path": "/home/darab/Desktop/fyp-frontend/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -119,6 +127,8 @@
       <workItem from="1687768288422" duration="136000" />
       <workItem from="1687768432643" duration="1696000" />
       <workItem from="1688117690451" duration="3902000" />
+      <workItem from="1688786175285" duration="752000" />
+      <workItem from="1688807449161" duration="2805000" />
     </task>
     <servers />
   </component>
