@@ -10,7 +10,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { validUserName } from "api/sign-up";
 import { MenuItem, Select } from "@mui/material";
 import { useEffect, useState } from "react";
-import { getRequest } from "utils/axios";
+import { getRequest, postRequest } from "utils/axios";
 import { BASE_BACKEND_URL } from "config";
 import axios from "axios";
 
@@ -21,6 +21,7 @@ const schema = yup.object().shape({
   Email: yup.string().email("Must be a valid Email"),
   Password: yup.string().min(8),
   "User Name": yup.string().min(5),
+  Role: yup.string(),
 });
 
 const FormContainer = styled("div")({
@@ -67,6 +68,7 @@ function SignUp() {
   const {
     handleSubmit,
     register,
+    setError,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
@@ -75,7 +77,20 @@ function SignUp() {
   function onSubmit(data: any) {
     let userName: string = data["User Name"];
     validUserName(userName).then((value) => {
-      console.log(value);
+      if (!value) {
+        setError("User Name", {
+          message: "Already used",
+        });
+      }
+    });
+
+    postRequest("/auth/signup", {
+      username: data["User Name"],
+      phoneNumber: data["Phone Number"],
+      name: data["Name"],
+      password: data["Password"],
+      dob: data["Date of birth"],
+      role: data["Role"],
     });
   }
 
@@ -133,8 +148,7 @@ function SignUp() {
           helperText={errors["Email"]?.message}
         />
 
-        <Select required fullWidth>
-
+        <Select required fullWidth {...register("Role")}>
           {option.map((data, index) => (
             <MenuItem key={index} value={data}>
               {data}
