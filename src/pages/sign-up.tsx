@@ -7,6 +7,7 @@ import {RoutesLink} from "routes";
 import {useForm} from "react-hook-form";
 import * as yup from "yup"
 import {yupResolver} from '@hookform/resolvers/yup';
+import {validUserName} from "api/sign-up";
 
 const schema = yup.object().shape({
     "First Name": yup.string().required("This Field Can't be Empty").min(5),
@@ -15,7 +16,7 @@ const schema = yup.object().shape({
     "Date of birth": yup.date().required("This Field is required"),
     "Email": yup.string().email("Must be a valid Email"),
     "Password": yup.string().min(8),
-    "UserName": yup.string().min(5)
+    "User Name": yup.string().min(5)
 })
 
 const FormContainer = styled("div")({
@@ -68,7 +69,10 @@ function SignUp() {
     })
 
     function onSubmit(data: any) {
-        console.log(data)
+        let userName:string=data["User Name"]
+        validUserName(userName).then(value => {
+            console.log(value)
+        })
     }
 
     return (
@@ -108,9 +112,9 @@ function SignUp() {
                     required
                     fullWidth
                     id={"username"}
-                    {...register("UserName")}
-                    error={!!errors["UserName"]}
-                    helperText={errors["UserName"]?.message}
+                    {...register("User Name")}
+                    error={!!errors["User Name"]}
+                    helperText={errors["User Name"]?.message}
                 />
                 <TextField
                     label="Email"
