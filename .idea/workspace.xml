@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d128cdf-1cce-43aa-90e9-1eb5f2f80508" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/sign-up.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sign-up.tsx" afterDir="false" />
     </list>
@@ -59,8 +60,8 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/usr/local/lib/node_modules/prettier",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Language Defaults",
+    "prettierjs.PrettierConfiguration.Package": "/home/darab/.nvm/versions/node/v16.20.1/lib/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
     "ts.external.directory.path": "/home/darab/Desktop/fyp-frontend/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -118,7 +119,7 @@
       <workItem from="1687768432643" duration="1696000" />
       <workItem from="1688117690451" duration="3902000" />
       <workItem from="1688786175285" duration="752000" />
-      <workItem from="1688807449161" duration="7970000" />
+      <workItem from="1688807449161" duration="8778000" />
     </task>
     <servers />
   </component>
