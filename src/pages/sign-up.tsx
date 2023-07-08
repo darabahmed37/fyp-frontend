@@ -8,10 +8,14 @@ import {useForm} from "react-hook-form";
 import * as yup from "yup"
 import {yupResolver} from '@hookform/resolvers/yup';
 import {validUserName} from "api/sign-up";
+import {MenuItem, Select} from "@mui/material";
+import {useEffect, useState} from "react";
+import {getRequest} from "utils/axios";
+import {BASE_BACKEND_URL} from "config";
+import axios from "axios";
 
 const schema = yup.object().shape({
-    "First Name": yup.string().required("This Field Can't be Empty").min(5),
-    "Last Name": yup.string().required("This Field Can't Be Empty ").min(3),
+    "Name": yup.string().required().min(5),
     "Phone Number": yup.string().required("Phone Number Can't Be Blank"),
     "Date of birth": yup.date().required("This Field is required"),
     "Email": yup.string().email("Must be a valid Email"),
@@ -69,40 +73,43 @@ function SignUp() {
     })
 
     function onSubmit(data: any) {
-        let userName:string=data["User Name"]
+        let userName: string = data["User Name"]
         validUserName(userName).then(value => {
             console.log(value)
         })
+
     }
+
+    const [option, setOption] = useState<string[]>([])
+
+
+    async function fetchOptions() {
+        let response = await getRequest(`${BASE_BACKEND_URL}/role`, axios)
+        setOption(response.data)
+
+    }
+
+    useEffect(() => {
+        fetchOptions()
+
+    }, [])
 
     return (
         <FormContainer>
             <Form onSubmit={handleSubmit(onSubmit)}>
                 <TextField
-                    label="First Name"
+                    label="Name"
                     variant="outlined"
                     margin="normal"
                     required
                     fullWidth
-                    id="firstName"
+                    id="Name"
 
                     autoComplete="given-name"
                     autoFocus
-                    {...register("First Name")}
-                    error={!!errors["First Name"]}
-                    helperText={errors["First Name"]?.message}
-                />
-                <TextField
-                    label="Last Name"
-                    variant="outlined"
-                    margin="normal"
-                    required
-                    fullWidth
-                    id="lastName"
-                    {...register("Last Name")}
-                    error={!!errors["Last Name"]}
-                    helperText={errors["Last Name"]?.message}
-                    autoComplete="family-name"
+                    {...register("Name")}
+                    error={!!errors["Name"]}
+                    helperText={errors["Name"]?.message}
                 />
 
                 <TextField
@@ -128,6 +135,12 @@ function SignUp() {
                     error={!!errors["Email"]}
                     helperText={errors["Email"]?.message}
                 />
+
+                <Select required fullWidth>
+                    {option.map((data, index) => (
+                        <MenuItem key={index} value={data}>{data}</MenuItem>
+                    ))}
+                </Select>
                 <TextField
                     label="Phone Number"
                     variant="outlined"
