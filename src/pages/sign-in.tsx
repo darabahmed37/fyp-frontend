@@ -1,6 +1,5 @@
 import * as React from "react";
 import {styled} from "@mui/material/styles";
-import Authentication from "layout/Authentication";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";

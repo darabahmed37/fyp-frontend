@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d128cdf-1cce-43aa-90e9-1eb5f2f80508" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/protected.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/protected.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/Authentication/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Authentication/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/sign-in.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sign-in.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/sign-up.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sign-up.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +28,26 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingMarkupGrave">
+    <markupCoffin contentHash="-565592479" url="file://$PROJECT_DIR$/src/pages/sign-up.tsx">
+      <highlighter start="0" end="31" layer="3750" target="0">
+        <option name="myExternalName" value="NOT_USED_ELEMENT_ATTRIBUTES" />
+      </highlighter>
+      <highlighter start="874" end="878" layer="3000" target="1" gutterIconUrl="jar:file:/snap/pycharm-professional/341/lib/app-client.jar!/expui/gutter/implementingMethod.svg" />
+      <highlighter start="893" end="900" layer="3000" target="1" gutterIconUrl="jar:file:/snap/pycharm-professional/341/lib/app-client.jar!/expui/gutter/implementingMethod.svg" />
+      <highlighter start="914" end="927" layer="3000" target="1" gutterIconUrl="jar:file:/snap/pycharm-professional/341/lib/app-client.jar!/expui/gutter/implementingMethod.svg" />
+      <highlighter start="943" end="957" layer="3000" target="1" gutterIconUrl="jar:file:/snap/pycharm-professional/341/lib/app-client.jar!/expui/gutter/implementingMethod.svg" />
+      <highlighter start="973" end="983" layer="3000" target="1" gutterIconUrl="jar:file:/snap/pycharm-professional/341/lib/app-client.jar!/expui/gutter/implementingMethod.svg" />
+      <highlighter start="999" end="1006" layer="3000" target="1" gutterIconUrl="jar:file:/snap/pycharm-professional/341/lib/app-client.jar!/expui/gutter/implementingMethod.svg" />
+      <highlighter start="1020" end="1026" layer="3000" target="1" gutterIconUrl="jar:file:/snap/pycharm-professional/341/lib/app-client.jar!/expui/gutter/implementingMethod.svg" />
+      <highlighter start="1042" end="1050" layer="3000" target="1" gutterIconUrl="jar:file:/snap/pycharm-professional/341/lib/app-client.jar!/expui/gutter/implementingMethod.svg" />
+      <highlighter start="1456" end="1463" layer="3000" target="1" gutterIconUrl="jar:file:/snap/pycharm-professional/341/lib/app-client.jar!/expui/gutter/implementingMethod.svg" />
+      <highlighter start="1477" end="1490" layer="3000" target="1" gutterIconUrl="jar:file:/snap/pycharm-professional/341/lib/app-client.jar!/expui/gutter/implementingMethod.svg" />
+      <highlighter start="1506" end="1516" layer="3000" target="1" gutterIconUrl="jar:file:/snap/pycharm-professional/341/lib/app-client.jar!/expui/gutter/implementingMethod.svg" />
+      <highlighter start="1532" end="1538" layer="3000" target="1" gutterIconUrl="jar:file:/snap/pycharm-professional/341/lib/app-client.jar!/expui/gutter/implementingMethod.svg" />
+      <highlighter start="1552" end="1560" layer="3000" target="1" gutterIconUrl="jar:file:/snap/pycharm-professional/341/lib/app-client.jar!/expui/gutter/implementingMethod.svg" />
+    </markupCoffin>
   </component>
   <component name="JsBowerSettings">
     <bower-package value="" />
@@ -117,7 +141,7 @@
       <workItem from="1687768432643" duration="1696000" />
       <workItem from="1688117690451" duration="3902000" />
       <workItem from="1688786175285" duration="752000" />
-      <workItem from="1688807449161" duration="2938000" />
+      <workItem from="1688807449161" duration="4976000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,4 @@
-import {ReactNode} from "react";
+
 import {styled} from "@mui/material/styles";
 import bg from "assets/imgs/bg.jpeg";
 import {Outlet} from "react-router-dom";

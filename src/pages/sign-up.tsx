@@ -14,7 +14,8 @@ const schema = yup.object().shape({
     "Phone Number": yup.string().required("Phone Number Can't Be Blank"),
     "Date of birth": yup.date().required("This Field is required"),
     "Email": yup.string().email("Must be a valid Email"),
-    "Password": yup.string().min(8)
+    "Password": yup.string().min(8),
+    "UserName": yup.string().min(5)
 })
 
 const FormContainer = styled("div")({
@@ -98,6 +99,18 @@ function SignUp() {
                     error={!!errors["Last Name"]}
                     helperText={errors["Last Name"]?.message}
                     autoComplete="family-name"
+                />
+
+                <TextField
+                    label={"Username"}
+                    variant={"outlined"}
+                    margin={"normal"}
+                    required
+                    fullWidth
+                    id={"username"}
+                    {...register("UserName")}
+                    error={!!errors["UserName"]}
+                    helperText={errors["UserName"]?.message}
                 />
                 <TextField
                     label="Email"

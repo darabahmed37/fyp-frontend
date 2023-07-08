@@ -1,5 +1,5 @@
 import {FC, ReactNode} from "react";
-import {ThemeProvider, Typography} from "@mui/material";
+import {ThemeProvider} from "@mui/material";
 import theme from "./theme";
 import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
 import {Dashboard, SignIn, SignUp} from "pages";
@@ -69,7 +69,7 @@ export function createRoutes(Routes: IRoute[]) {
             </Route>
         );
     });
-    outputRoutes.push(<Route key={3000} path="*" element={<Navigate to={"/"}/>}/>);
+    outputRoutes.push(<Route key={9000} path="*" element={<Navigate to={"/"}/>}/>);
     return outputRoutes;
 }
 
