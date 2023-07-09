@@ -1,90 +1,87 @@
-import {FC, ReactNode} from "react";
-import {ThemeProvider} from "@mui/material";
+import { FC, ReactNode } from "react";
+import { ThemeProvider } from "@mui/material";
 import theme from "./theme";
-import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
-import {Dashboard, SignIn, SignUp} from "pages";
-import {RoutesLink} from "routes";
-import Authentication from "./layout/Authentication";
-import {PrivateRoutes, PublicRoutes} from "components/protected";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { SignIn, SignUp } from "pages";
+import { RoutesLink } from "routes";
+import Authentication from "layout/Authentication";
+import { PrivateRoutes, PublicRoutes } from "components/protected";
+import Home from "layout/Home";
 
 export interface IRoute {
-    path: string;
-    element: ReactNode;
-    child?: IRoute[];
-    index?: boolean;
-    protected?: boolean;
+  path: string;
+  element: ReactNode;
+  child?: IRoute[];
+  index?: boolean;
+  protected?: boolean;
 }
 
 const routes: IRoute[] = [
-    {
-        path: "/auth",
-        element: <Authentication/>,
-        child: [
-            {
-                path: RoutesLink.LOGIN,
-                element: <SignIn/>,
-
-            },
-            {
-                path: RoutesLink.REGISTER,
-                element: <SignUp/>,
-            },
-            {
-                element: <SignIn/>,
-                index: true,
-                path: "",
-            }
-        ],
-    }, {
-        path: '/',
-        element: <Dashboard/>,
-        protected: true
-
-    }
+  {
+    path: "/auth",
+    element: <Authentication />,
+    child: [
+      {
+        path: RoutesLink.LOGIN,
+        element: <SignIn />,
+      },
+      {
+        path: RoutesLink.REGISTER,
+        element: <SignUp />,
+      },
+      {
+        element: <SignIn />,
+        index: true,
+        path: "",
+      },
+    ],
+  },
+  {
+    path: "/",
+    element: <Home />,
+    protected: true,
+  },
 ];
 
-
 export function createRoutes(Routes: IRoute[]) {
-    let outputRoutes: ReactNode[] = Routes.map((route, index) => {
-        if (route.child === undefined) {
-            return route.protected ? (
-                <Route element={<PrivateRoutes/>} key={index}>
-                    <Route {...route} key={index}/>
-                </Route>
-            ) : (
-                <Route {...route} key={index}/>
-            );
-        }
-        return route.protected ? (
-            <Route element={<PrivateRoutes/>} key={index}>
-                <Route path={route.path} key={index} element={route.element}>
-                    {createRoutes(route.child)}
-                </Route>
-            </Route>
-        ) : (
-            <Route element={<PublicRoutes/>} key={index}>
-                <Route path={route.path} key={index} element={route.element}>
-                    {createRoutes(route.child)}
-                </Route>
-            </Route>
-        );
-    });
-    outputRoutes.push(<Route key={9000} path="*" element={<Navigate to={"/"}/>}/>);
-    return outputRoutes;
+  let outputRoutes: ReactNode[] = Routes.map((route, index) => {
+    if (route.child === undefined) {
+      return route.protected ? (
+        <Route element={<PrivateRoutes />} key={index}>
+          <Route {...route} key={index} />
+        </Route>
+      ) : (
+        <Route {...route} key={index} />
+      );
+    }
+    return route.protected ? (
+      <Route element={<PrivateRoutes />} key={index}>
+        <Route path={route.path} key={index} element={route.element}>
+          {createRoutes(route.child)}
+        </Route>
+      </Route>
+    ) : (
+      <Route element={<PublicRoutes />} key={index}>
+        <Route path={route.path} key={index} element={route.element}>
+          {createRoutes(route.child)}
+        </Route>
+      </Route>
+    );
+  });
+  outputRoutes.push(
+    <Route key={9000} path="*" element={<Navigate to={"/"} />} />,
+  );
+  return outputRoutes;
 }
 
-
 const App: FC = () => {
-    return (
-        <ThemeProvider theme={theme}>
-            <BrowserRouter>
-                <Routes>
-                    {createRoutes(routes)}
-
-                </Routes>
-            </BrowserRouter>
-        </ThemeProvider>
-    );
+  return (
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <Routes>{createRoutes(routes)}</Routes>
+      </BrowserRouter>
+    </ThemeProvider>
+  );
 };
 
 export default App;
