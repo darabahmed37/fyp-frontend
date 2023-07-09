@@ -7,6 +7,7 @@ import { RoutesLink } from "routes";
 import Authentication from "layout/Authentication";
 import { PrivateRoutes, PublicRoutes } from "components/protected";
 import Home from "layout/Home";
+import Dashboard from "pages/Dashboard";
 
 export interface IRoute {
   path: string;
@@ -40,6 +41,13 @@ const routes: IRoute[] = [
     path: "/",
     element: <Home />,
     protected: true,
+    child:[
+      {
+        index: true,
+        element: <Dashboard/>,
+        path: "/"
+      }
+    ]
   },
 ];
 

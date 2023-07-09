@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d128cdf-1cce-43aa-90e9-1eb5f2f80508" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/layout/Home.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Dashboard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Authentication/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Authentication.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/dashboard.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/sign-in.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sign-in.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Home.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,20 +29,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingMarkupGrave">
-    <markupCoffin contentHash="1491636367" url="file://$PROJECT_DIR$/src/layout/Home.tsx">
-      <highlighter start="263" end="268" layer="3750" target="0">
+    <markupCoffin contentHash="-1212749887" url="file://$PROJECT_DIR$/src/layout/Home.tsx">
+      <highlighter start="265" end="270" layer="3750" target="0">
         <option name="myExternalName" value="NOT_USED_ELEMENT_ATTRIBUTES" />
       </highlighter>
-      <highlighter start="392" end="399" layer="3000" target="0">
+      <highlighter start="397" end="404" layer="3000" target="0">
         <option name="myExternalName" value="TYPO" />
       </highlighter>
-      <highlighter start="413" end="418" layer="3000" target="0">
-        <option name="myExternalName" value="TYPO" />
-      </highlighter>
-      <highlighter start="701" end="702" layer="3750" target="0">
+      <highlighter start="750" end="751" layer="3750" target="0">
         <option name="myExternalName" value="NOT_USED_ELEMENT_ATTRIBUTES" />
       </highlighter>
-      <highlighter start="701" end="702" layer="4000" target="0">
+      <highlighter start="750" end="751" layer="4000" target="0">
         <option name="myExternalName" value="NOT_USED_ELEMENT_ATTRIBUTES" />
       </highlighter>
     </markupCoffin>
@@ -150,7 +143,7 @@
       <workItem from="1688117690451" duration="3902000" />
       <workItem from="1688786175285" duration="752000" />
       <workItem from="1688807449161" duration="9572000" />
-      <workItem from="1688827620922" duration="11881000" />
+      <workItem from="1688827620922" duration="12816000" />
     </task>
     <servers />
   </component>
