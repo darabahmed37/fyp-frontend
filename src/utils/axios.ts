@@ -31,10 +31,12 @@ axiosApiInstance.interceptors.response.use(
         const originalRequest = error.config;
 
         if (error.response.status === 401) {
+            debugger
             if (!originalRequest._retry && error.response.data.code === "token_not_valid") {
                 originalRequest._retry = true;
                 let access_token: string;
                 const refreshToken = getRefreshToken();
+
                 if (refreshToken) {
                     try {
                         const response = await refreshAccessToken(refreshToken);

@@ -4,12 +4,13 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
 import { RoutesLink } from "routes";
-import { useState } from "react";
+
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { signIn } from "api/sign-in";
 import { setAccessToken, setRefreshToken } from "utils/user";
+import { getRequest } from "utils/axios";
 
 const FormContainer = styled("div")({
   flex: "1 1 0",
@@ -68,7 +69,10 @@ function SignIn() {
     signIn(data["User Name"], data["Password"]).then((response) => {
       setAccessToken(response["access_token"]);
       setRefreshToken(response["refresh_token"]);
-      window.location.href="/"
+      getRequest("/user/profile").then((response) => {
+        localStorage.setItem("user", JSON.stringify(response.data));
+        window.location.href = "/";
+      });
     });
   };
   return (
