@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d128cdf-1cce-43aa-90e9-1eb5f2f80508" name="Changes" comment="" />
+    <list default="true" id="7d128cdf-1cce-43aa-90e9-1eb5f2f80508" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/sign-in.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/sign-in.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sign-in.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,50 +28,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingMarkupGrave">
-    <markupCoffin contentHash="1144628764" url="file://$PROJECT_DIR$/src/pages/sign-in.tsx">
-      <highlighter start="0" end="31" layer="3750" target="0">
-        <option name="myExternalName" value="NOT_USED_ELEMENT_ATTRIBUTES" />
-      </highlighter>
-      <highlighter start="247" end="280" layer="3750" target="0">
-        <option name="myExternalName" value="NOT_USED_ELEMENT_ATTRIBUTES" />
-      </highlighter>
-      <highlighter start="247" end="280" layer="4000" target="0">
-        <option name="myExternalName" value="NOT_USED_ELEMENT_ATTRIBUTES" />
-      </highlighter>
-      <highlighter start="448" end="452" layer="3000" target="1" gutterIconUrl="jar:file:/snap/pycharm-professional/341/lib/app-client.jar!/expui/gutter/implementingMethod.svg" />
-      <highlighter start="465" end="472" layer="3000" target="1" gutterIconUrl="jar:file:/snap/pycharm-professional/341/lib/app-client.jar!/expui/gutter/implementingMethod.svg" />
-      <highlighter start="484" end="497" layer="3000" target="1" gutterIconUrl="jar:file:/snap/pycharm-professional/341/lib/app-client.jar!/expui/gutter/implementingMethod.svg" />
-      <highlighter start="511" end="525" layer="3000" target="1" gutterIconUrl="jar:file:/snap/pycharm-professional/341/lib/app-client.jar!/expui/gutter/implementingMethod.svg" />
-      <highlighter start="539" end="549" layer="3000" target="1" gutterIconUrl="jar:file:/snap/pycharm-professional/341/lib/app-client.jar!/expui/gutter/implementingMethod.svg" />
-      <highlighter start="563" end="570" layer="3000" target="1" gutterIconUrl="jar:file:/snap/pycharm-professional/341/lib/app-client.jar!/expui/gutter/implementingMethod.svg" />
-      <highlighter start="582" end="588" layer="3000" target="1" gutterIconUrl="jar:file:/snap/pycharm-professional/341/lib/app-client.jar!/expui/gutter/implementingMethod.svg" />
-      <highlighter start="602" end="610" layer="3000" target="1" gutterIconUrl="jar:file:/snap/pycharm-professional/341/lib/app-client.jar!/expui/gutter/implementingMethod.svg" />
-      <highlighter start="960" end="967" layer="3000" target="1" gutterIconUrl="jar:file:/snap/pycharm-professional/341/lib/app-client.jar!/expui/gutter/implementingMethod.svg" />
-      <highlighter start="979" end="992" layer="3000" target="1" gutterIconUrl="jar:file:/snap/pycharm-professional/341/lib/app-client.jar!/expui/gutter/implementingMethod.svg" />
-      <highlighter start="1006" end="1016" layer="3000" target="1" gutterIconUrl="jar:file:/snap/pycharm-professional/341/lib/app-client.jar!/expui/gutter/implementingMethod.svg" />
-      <highlighter start="1030" end="1036" layer="3000" target="1" gutterIconUrl="jar:file:/snap/pycharm-professional/341/lib/app-client.jar!/expui/gutter/implementingMethod.svg" />
-      <highlighter start="1048" end="1056" layer="3000" target="1" gutterIconUrl="jar:file:/snap/pycharm-professional/341/lib/app-client.jar!/expui/gutter/implementingMethod.svg" />
-      <highlighter start="1320" end="1326" layer="4000" target="0">
-        <option name="myExternalName" value="NOT_USED_ELEMENT_ATTRIBUTES" />
-      </highlighter>
-      <highlighter start="1477" end="1481" layer="3750" target="0">
-        <option name="myExternalName" value="NOT_USED_ELEMENT_ATTRIBUTES" />
-      </highlighter>
-      <highlighter start="1477" end="1481" layer="4000" target="0">
-        <option name="myExternalName" value="NOT_USED_ELEMENT_ATTRIBUTES" />
-      </highlighter>
-      <highlighter start="2588" end="2588" layer="5000" target="0">
-        <option name="myExternalName" value="ERRORS_ATTRIBUTES" />
-      </highlighter>
-      <highlighter start="2588" end="2588" layer="5000" target="0">
-        <option name="myExternalName" value="ERRORS_ATTRIBUTES" />
-      </highlighter>
-      <highlighter start="2589" end="2589" layer="5000" target="0">
-        <option name="myExternalName" value="ERRORS_ATTRIBUTES" />
-      </highlighter>
-    </markupCoffin>
-  </component>
   <component name="JsBowerSettings">
     <bower-package value="" />
     <bower.json value="" />
@@ -82,30 +43,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/darab/Desktop/fyp-frontend&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/darab/.nvm/versions/node/v16.20.1/lib/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/darab/Desktop/fyp-frontend/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/darab/Desktop/fyp-frontend",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/home/darab/.nvm/versions/node/v16.20.1/lib/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/home/darab/Desktop/fyp-frontend/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets/imgs" />
@@ -160,7 +126,7 @@
       <workItem from="1688117690451" duration="3902000" />
       <workItem from="1688786175285" duration="752000" />
       <workItem from="1688807449161" duration="9572000" />
-      <workItem from="1688827620922" duration="3035000" />
+      <workItem from="1688827620922" duration="4823000" />
     </task>
     <servers />
   </component>

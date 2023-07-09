@@ -8,6 +8,8 @@ import { useState } from "react";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { signIn } from "api/sign-in";
+import { setAccessToken, setRefreshToken } from "utils/user";
 
 const FormContainer = styled("div")({
   flex: "1 1 0",
@@ -63,45 +65,50 @@ function SignIn() {
     resolver: yupResolver(schema),
   });
   const onSubmit = (data: any) => {
-    return (
-      <FormContainer>
-        <Form onSubmit={handleSubmit(onSubmit)}>
-          <TextField
-            label="Username"
-            variant="outlined"
-            margin="normal"
-            required
-            fullWidth
-            id="username"
-            autoComplete="username"
-            {...register("User Name")}
-            error={!!errors["User Name"]}
-            helperText={errors["User Name"]?.message}
-            autoFocus
-          />
-          <TextField
-            label="Password"
-            variant="outlined"
-            margin="normal"
-            required
-            fullWidth
-            {...register("Password")}
-            error={!!errors["Password"]}
-            helperText={errors["Password"]?.message}
-            type="password"
-            id="password"
-            autoComplete="current-password"
-          />
-          <Button type="submit" variant="contained" sx={{ mt: 3, mb: 2 }}>
-            Sign in
-          </Button>
-          <Link href={RoutesLink.REGISTER} variant="body2">
-            Don't have an account? Sign Up
-          </Link>
-        </Form>
-      </FormContainer>
-    );
+    signIn(data["User Name"], data["Password"]).then((response) => {
+      setAccessToken(response["access_token"]);
+      setRefreshToken(response["refresh_token"]);
+      window.location.href="/"
+    });
   };
+  return (
+    <FormContainer>
+      <Form onSubmit={handleSubmit(onSubmit)}>
+        <TextField
+          label="Username"
+          variant="outlined"
+          margin="normal"
+          required
+          fullWidth
+          id="username"
+          autoComplete="username"
+          {...register("User Name")}
+          error={!!errors["User Name"]}
+          helperText={errors["User Name"]?.message}
+          autoFocus
+        />
+        <TextField
+          label="Password"
+          variant="outlined"
+          margin="normal"
+          required
+          fullWidth
+          {...register("Password")}
+          error={!!errors["Password"]}
+          helperText={errors["Password"]?.message}
+          type="password"
+          id="password"
+          autoComplete="current-password"
+        />
+        <Button type="submit" variant="contained" sx={{ mt: 3, mb: 2 }}>
+          Sign in
+        </Button>
+        <Link href={RoutesLink.REGISTER} variant="body2">
+          Don't have an account? Sign Up
+        </Link>
+      </Form>
+    </FormContainer>
+  );
 }
 
 export default SignIn;
