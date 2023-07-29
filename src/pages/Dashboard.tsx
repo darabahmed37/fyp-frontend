@@ -15,7 +15,9 @@ import inspection from "assets/icons/diagnostic_1786559.png";
 import generator from "assets/icons/electric-generator_6232580.png";
 import key from "assets/icons/key_807241.png";
 import maintinace from "assets/icons/maintenance_1743614.png";
-
+import disInfection from "assets/icons/no-virus_6004151.png";
+import emergency from "assets/icons/siren_2785693.png";
+import homeService from "assets/icons/tools_3326146.png";
 export interface DashboardOptions {
   image: string;
   description: string;
@@ -59,6 +61,24 @@ const items: DashboardOptions[] = [
     description:
       "Our car maintenance key service app offers reliable and efficient car towing solutions to keep drivers stress-free on the road. With just a few taps, users can request prompt assistance from trusted towing professionals. Whether it's a breakdown or accident, our app ensures a seamless towing experience, providing peace of mind to our valued customers.",
     title: "Car Maintaince",
+  },
+  {
+    image: disInfection,
+    title: "Disinfection Car",
+    description:
+      "Introducing our innovative car disinfection service app! We prioritize your safety with a 360-degree approach to sanitizing your vehicle. Our expert team employs advanced techniques and hospital-grade disinfectants to eliminate harmful germs, viruses, and bacteria. Enjoy a clean and germ-free driving experience with our convenient and reliable app. Protect your loved ones today!",
+  },
+  {
+    image: emergency,
+    title: "Emergency Service",
+    description:
+      "Introducing our cutting-edge Emergency Car Repair Service App – your ultimate companion in roadside crises. No more panic when your car breaks down unexpectedly. With just a tap, expert mechanics will swiftly reach your location, equipped with top-notch tools to fix any issue. Reliable, fast, and efficient, we'll get you back on the road in no time! Download now and drive with peace of mind.",
+  },
+  {
+    image: homeService,
+    title: "Home Service",
+    description:
+      "Our home service repair app offers efficient car repair solutions, ensuring your vehicle stays roadworthy. From routine maintenance to complex repairs, our skilled technicians are equipped to handle all car-related issues. Experience convenience at your doorstep, timely assistance, and transparent pricing, making car maintenance hassle-free and reliable for all users.",
   },
 ];
 
