@@ -4,30 +4,43 @@ import { Call, More } from "@mui/icons-material";
 
 const Dashboard = () => {
   return (
-    <Box sx={{background:"#7c7dfa"}}>
-      <Stack
-        direction={"row"}
-        justifyContent={"space-between"}
-        alignItems={"center"}
+    <Box>
+      <Box
+        sx={{
+          background: "#7578ef",
+          borderRadius: "10px",
+        }}
       >
-        <IconButton>
-          <Call />
-        </IconButton>
+        <Stack
+          direction={"row"}
+          justifyContent={"space-between"}
+          alignItems={"center"}
+        >
+          <IconButton>
+            <Call />
+          </IconButton>
+          <Box
+            sx={{
+              background: "#eee1b4",
+              width: "18em",
+              borderRadius: "10px",
+              padding: ".5em 0em",
+            }}
+          >
+            <Typography textAlign={"center"}>Refer a friend</Typography>
+          </Box>
+
+          <IconButton>
+            <More />
+          </IconButton>
+        </Stack>
+      </Box>
+
         <Box sx={{
-            background:"#e2bd3b",
-            borderRadius:"50%",
-            width:"20em",
-            padding:"1em 0"
+            bgcolor:"#e2e2e2"
         }}>
 
-
-          <Typography textAlign={"center"}>Refer a friend</Typography>
         </Box>
-
-        <IconButton>
-          <More />
-        </IconButton>
-      </Stack>
     </Box>
   );
 };

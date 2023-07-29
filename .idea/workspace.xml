@@ -5,20 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c6dd017-76a6-4b28-976b-1257e9580721" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/92b70c17-308f-4cca-97e2-19a903e4672c.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/92b70c17-308f-4cca-97e2-19a903e4672c/storage_v2/_src_/database/fyp._Y0BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/92b70c17-308f-4cca-97e2-19a903e4672c/storage_v2/_src_/database/fyp._Y0BAA/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/92b70c17-308f-4cca-97e2-19a903e4672c/storage_v2/_src_/database/fyp._Y0BAA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/92b70c17-308f-4cca-97e2-19a903e4672c/storage_v2/_src_/database/fyp._Y0BAA/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/air-conditioning_1060321.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/breakdown_3005593.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/diagnostic_1786559.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/electric-generator_6232580.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/eye-scan_5226079.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/key_807241.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/maintenance_1743614.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/no-virus_6004151.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/siren_2785693.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/tools_3326146.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +82,7 @@
       <updated>1690548718678</updated>
       <workItem from="1690548719705" duration="195000" />
       <workItem from="1690548926088" duration="16000" />
-      <workItem from="1690599599530" duration="3932000" />
+      <workItem from="1690599599530" duration="6255000" />
     </task>
     <servers />
   </component>
