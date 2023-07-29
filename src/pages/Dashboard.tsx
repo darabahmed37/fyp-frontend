@@ -18,6 +18,7 @@ import maintinace from "assets/icons/maintenance_1743614.png";
 import disInfection from "assets/icons/no-virus_6004151.png";
 import emergency from "assets/icons/siren_2785693.png";
 import homeService from "assets/icons/tools_3326146.png";
+
 export interface DashboardOptions {
   image: string;
   description: string;
@@ -131,6 +132,11 @@ const Dashboard = () => {
               maxWidth: "300px",
               padding: "2em 1.4em",
               margin: "auto",
+              cursor: "pointer",
+              transition: "transform 0.3s ease",
+              "&:hover": {
+                transform: "scale(1.04)",
+              },
             }}
           >
             <CardMedia
