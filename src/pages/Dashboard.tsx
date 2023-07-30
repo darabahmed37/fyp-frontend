@@ -10,17 +10,18 @@ import {
 } from "@mui/material";
 import { Call, More } from "@mui/icons-material";
 import { getRequest } from "utils/axios";
+import { useNavigate } from "react-router-dom";
 
 export interface DashboardOptions {
   image: string;
   description: string;
   title: string;
-  to?: string;
+  id: string;
 }
 
 const Dashboard = () => {
   const [items, setItems] = useState<DashboardOptions[]>([]);
-
+  const navigate = useNavigate();
   useEffect(() => {
     getRequest("/services").then((response) => {
       setItems(response.data);
@@ -71,6 +72,9 @@ const Dashboard = () => {
       >
         {items.map((it, index) => (
           <Card
+            onClick={() => {
+              navigate(`service/${it.id}`)
+            }}
             key={index}
             sx={{
               maxWidth: "300px",
@@ -78,6 +82,7 @@ const Dashboard = () => {
               margin: "auto",
               cursor: "pointer",
               transition: "transform 0.3s ease",
+              userSelect: "none",
               "&:hover": {
                 transform: "scale(1.04)",
               },

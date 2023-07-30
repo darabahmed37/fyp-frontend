@@ -2,15 +2,14 @@ import { FC, ReactNode } from "react";
 import { ThemeProvider } from "@mui/material";
 import theme from "./theme";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import { SignIn, SignUp } from "pages";
+import { Dashboard, Service, SignIn, SignUp } from "pages";
 import { RoutesLink } from "routes";
 import Authentication from "layout/Authentication";
 import { PrivateRoutes, PublicRoutes } from "components/protected";
 import Home from "layout/Home";
-import Dashboard from "pages/Dashboard";
 
 export interface IRoute {
-  path: string;
+  path?: string;
   element: ReactNode;
   child?: IRoute[];
   index?: boolean;
@@ -41,13 +40,16 @@ const routes: IRoute[] = [
     path: "/",
     element: <Home />,
     protected: true,
-    child:[
+    child: [
       {
         index: true,
-        element: <Dashboard/>,
-        path: "/"
-      }
-    ]
+        element: <Dashboard />,
+      },
+      {
+        element: <Service />,
+        path: "service/:service",
+      },
+    ],
   },
 ];
 
@@ -83,7 +85,7 @@ export function createRoutes(Routes: IRoute[]) {
 }
 
 const App: FC = () => {
-  return (
+    return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
         <Routes>{createRoutes(routes)}</Routes>
