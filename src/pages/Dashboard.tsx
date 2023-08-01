@@ -73,7 +73,7 @@ const Dashboard = () => {
         {items.map((it, index) => (
           <Card
             onClick={() => {
-              navigate(`service/${it.id}`)
+              navigate(`service/${it.id}`);
             }}
             key={index}
             sx={{

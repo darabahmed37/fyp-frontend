@@ -42,11 +42,13 @@ const Home: FC = () => {
         </Tabs>
       </Box>
 
-      <Box sx={{
-          maxWidth:"1280px",
-          margin:"auto",
-          marginTop:"1em"
-      }}>
+      <Box
+        sx={{
+          maxWidth: "1280px",
+          margin: "auto",
+          marginTop: "1em",
+        }}
+      >
         <Outlet />
       </Box>
     </>

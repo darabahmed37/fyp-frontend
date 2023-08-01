@@ -5,11 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d128cdf-1cce-43aa-90e9-1eb5f2f80508" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/Service.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Settings/Customer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Settings/Driver.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Settings/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b147d9ee-672d-4188-afad-ff589ce42a63.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b147d9ee-672d-4188-afad-ff589ce42a63.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/sign-up.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/sign-up.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/protected.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/protected.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/Authentication.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Authentication.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/axios.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/axios.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/user.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +36,8 @@
       <list>
         <option value="package.json" />
         <option value="CSS File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -61,7 +76,7 @@
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/home/darab/.nvm/versions/node/v18.17.0/lib/node_modules/prettier",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Language Defaults",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
     "ts.external.directory.path": "/home/darab/Desktop/fyp-frontend/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   },
@@ -77,6 +92,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/Settings" />
       <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src/layouts/authentication-home" />
     </key>
@@ -114,7 +130,8 @@
       <workItem from="1681108201850" duration="1223000" />
       <workItem from="1681797215597" duration="1767000" />
       <workItem from="1690698161227" duration="1688000" />
-      <workItem from="1690710040845" duration="5370000" />
+      <workItem from="1690710040845" duration="5426000" />
+      <workItem from="1690877201653" duration="2311000" />
     </task>
     <servers />
   </component>

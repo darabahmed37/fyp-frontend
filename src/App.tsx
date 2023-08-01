@@ -2,7 +2,7 @@ import { FC, ReactNode } from "react";
 import { ThemeProvider } from "@mui/material";
 import theme from "./theme";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import { Dashboard, Service, SignIn, SignUp } from "pages";
+import { Dashboard, Service, Settings, SignIn, SignUp } from "pages";
 import { RoutesLink } from "routes";
 import Authentication from "layout/Authentication";
 import { PrivateRoutes, PublicRoutes } from "components/protected";
@@ -49,6 +49,10 @@ const routes: IRoute[] = [
         element: <Service />,
         path: "service/:service",
       },
+      {
+        path: "settings",
+        element: <Settings />,
+      },
     ],
   },
 ];
@@ -85,7 +89,7 @@ export function createRoutes(Routes: IRoute[]) {
 }
 
 const App: FC = () => {
-    return (
+  return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
         <Routes>{createRoutes(routes)}</Routes>
