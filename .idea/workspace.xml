@@ -5,11 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d128cdf-1cce-43aa-90e9-1eb5f2f80508" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/api/signin.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/api/signup.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/component/protected-routes.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/pages/Dashboard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +17,8 @@
       <list>
         <option value="package.json" />
         <option value="CSS File" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -118,7 +113,7 @@
       <workItem from="1690698161227" duration="1688000" />
       <workItem from="1690710040845" duration="5426000" />
       <workItem from="1690877201653" duration="2328000" />
-      <workItem from="1691843583626" duration="1187000" />
+      <workItem from="1691843583626" duration="2368000" />
     </task>
     <servers />
   </component>
