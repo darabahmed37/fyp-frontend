@@ -35,7 +35,9 @@ const Driver = () => {
         });
     };
     useEffect(() => {
-        getRequest("driver/services");
+        getRequest("/driver/services").then(response => {
+            setSelectedServices(response.data)
+        });
     }, []);
 
     function saveServices() {
