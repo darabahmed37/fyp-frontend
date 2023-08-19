@@ -1,5 +1,5 @@
 export enum RoutesLink {
-  HOME = "/",
-  LOGIN = "/auth/login",
-  REGISTER = "/auth/register",
+    HOME = "/",
+    LOGIN = "/auth/login",
+    REGISTER = "/auth/register",
 }
