@@ -11,22 +11,13 @@ import {
 import { Call, More } from "@mui/icons-material";
 import { getRequest } from "utils/axios";
 import { useNavigate } from "react-router-dom";
-
-export interface DashboardOptions {
-  image: string;
-  description: string;
-  title: string;
-  id: string;
-}
+import { IServices } from "utils/types";
+import { useAppStore } from "../store";
 
 const Dashboard = () => {
-  const [items, setItems] = useState<DashboardOptions[]>([]);
+  const items = useAppStore.use.services();
+  const setItems = useAppStore.use.setServices();
   const navigate = useNavigate();
-  useEffect(() => {
-    getRequest("/services").then((response) => {
-      setItems(response.data);
-    });
-  }, []);
 
   return (
     <Box>

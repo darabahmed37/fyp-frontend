@@ -1,6 +1,6 @@
 import axios from "axios";
-import {validUserName} from "api/sign-up";
-import {BASE_BACKEND_URL} from "config";
+import { validUserName } from "api/sign-up";
+import { BASE_BACKEND_URL } from "config";
 
 // Mocking the getRequest function
 jest.mock("utils/axios", () => ({
@@ -26,7 +26,7 @@ describe("validUserName function", () => {
 
     // Assert
     expect(axios.get).toHaveBeenCalledWith(
-      `${BASE_BACKEND_URL}/user/checkUserName?username=${validUsername}`
+      `${BASE_BACKEND_URL}/user/checkUserName?username=${validUsername}`,
     );
     expect(result).toEqual(true);
   });
@@ -45,7 +45,7 @@ describe("validUserName function", () => {
 
     // Assert
     expect(axios.get).toHaveBeenCalledWith(
-      `${BASE_BACKEND_URL}/user/checkUserName?username=${invalidUsername}`
+      `${BASE_BACKEND_URL}/user/checkUserName?username=${invalidUsername}`,
     );
     expect(result).toEqual(false);
   });
@@ -64,7 +64,9 @@ describe("validUserName function", () => {
     (axios.get as jest.Mock).mockRejectedValue(mockErrorResponse);
 
     // Act & Assert
-    await expect(validUserName("testUser")).rejects.toThrowError("Internal server error");
+    await expect(validUserName("testUser")).rejects.toThrowError(
+      "Internal server error",
+    );
   });
 
   it("should return false for an undefined username", async () => {

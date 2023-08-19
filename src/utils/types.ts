@@ -8,3 +8,10 @@ export type User = {
   phoneNumber: string;
   username: string;
 };
+
+export interface IServices {
+  image: string;
+  description: string;
+  title: string;
+  id: string;
+}

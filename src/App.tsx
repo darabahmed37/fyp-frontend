@@ -1,12 +1,20 @@
-import { FC, ReactNode } from "react";
+import { FC, ReactNode, useEffect } from "react";
 import { ThemeProvider } from "@mui/material";
 import theme from "./theme";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter,
+  Navigate,
+  Route,
+  Routes,
+  useNavigate,
+} from "react-router-dom";
 import { Dashboard, Service, Settings, SignIn, SignUp } from "pages";
 import { RoutesLink } from "routes";
 import Authentication from "layout/Authentication";
 import { PrivateRoutes, PublicRoutes } from "components/protected";
 import Home from "layout/Home";
+import { useAppStore } from "./store";
+import { getRequest } from "./utils/axios";
 
 export interface IRoute {
   path?: string;
@@ -89,6 +97,13 @@ export function createRoutes(Routes: IRoute[]) {
 }
 
 const App: FC = () => {
+  const setItems = useAppStore.use.setServices();
+  useEffect(() => {
+    getRequest("/services").then((response) => {
+      setItems(response.data);
+    });
+  }, [setItems]);
+
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>

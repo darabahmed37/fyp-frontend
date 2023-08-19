@@ -1,9 +1,10 @@
 import React from "react";
 import { render, fireEvent, screen, waitFor } from "@testing-library/react";
-import Dashboard, {DashboardOptions} from "pages/Dashboard";
+import Dashboard from "pages/Dashboard";
+import { IServices } from "../../utils/types";
 
 describe("Dashboard Component", () => {
-  const mockItems: DashboardOptions[] = [
+  const mockItems: IServices[] = [
     {
       image: "image1.jpg",
       description: "Description 1",
@@ -21,9 +22,7 @@ describe("Dashboard Component", () => {
   beforeAll(() => {
     // Mock getRequest function from utils/axios
     jest.mock("utils/axios", () => ({
-      getRequest: jest.fn(() =>
-        Promise.resolve({ data: mockItems } as any)
-      ),
+      getRequest: jest.fn(() => Promise.resolve({ data: mockItems } as any)),
     }));
 
     // Mock process.env

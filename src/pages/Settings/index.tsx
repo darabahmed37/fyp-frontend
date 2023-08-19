@@ -11,7 +11,6 @@ const Settings = () => {
 
   return (
     <div>
-      i AM SETTINGS
       <div>{user?.role === "CUSTOMER" ? <Customer /> : <Driver />}</div>
     </div>
   );

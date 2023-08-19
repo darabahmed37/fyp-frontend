@@ -1,5 +1,5 @@
 import axios from "axios";
-import {signIn} from "api/sign-in";
+import { signIn } from "api/sign-in";
 // Mocking the postRequest function
 jest.mock("utils/axios", () => ({
   postRequest: jest.fn(),
@@ -26,13 +26,10 @@ describe("signIn function", () => {
     const result = await signIn("testUser", "password123");
 
     // Assert
-    expect(axios.post).toHaveBeenCalledWith(
-      "/auth/signin",
-      {
-        username: "testUser",
-        password: "password123",
-      }
-    );
+    expect(axios.post).toHaveBeenCalledWith("/auth/signin", {
+      username: "testUser",
+      password: "password123",
+    });
     expect(result).toEqual(mockResponse.data);
   });
 
@@ -43,6 +40,8 @@ describe("signIn function", () => {
     (axios.post as jest.Mock).mockRejectedValue(new Error(errorMessage));
 
     // Act & Assert
-    await expect(signIn("invalidUser", "invalidPassword")).rejects.toThrowError(errorMessage);
+    await expect(signIn("invalidUser", "invalidPassword")).rejects.toThrowError(
+      errorMessage,
+    );
   });
 });

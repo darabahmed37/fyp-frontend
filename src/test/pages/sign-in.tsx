@@ -1,6 +1,6 @@
 import React from "react";
 import { render, fireEvent, screen, waitFor } from "@testing-library/react";
-import {SignIn} from "pages";
+import { SignIn } from "pages";
 
 describe("SignIn Component", () => {
   it("submits the form with valid credentials", async () => {
