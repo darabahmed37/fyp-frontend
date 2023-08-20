@@ -7,6 +7,7 @@ import {RoutesLink} from "routes";
 import Authentication from "layout/Authentication";
 import {PrivateRoutes, PublicRoutes} from "components/protected";
 import Home from "layout/Home";
+import AboutPage from "./pages/About";
 
 export interface IRoute {
     path?: string;
@@ -53,6 +54,11 @@ const routes: IRoute[] = [
                 path: "settings",
                 element: <Settings/>,
             },
+            {
+                path: "about",
+                element: <AboutPage/>
+            }
+
         ],
     },
 ];
