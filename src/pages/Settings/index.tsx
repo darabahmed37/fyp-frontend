@@ -1,7 +1,7 @@
 import React from "react";
 import {getUser, logOut} from "utils/user";
 import Customer from "pages/Settings/Customer";
-import Driver from "pages/Settings/Driver";
+import Mechanic from "./Mechanic";
 
 const Settings = () => {
     const user = getUser();
@@ -11,7 +11,7 @@ const Settings = () => {
 
     return (
         <div>
-            <div>{user?.role === "CUSTOMER" ? <Customer/> : <Driver/>}</div>
+            <div>{user?.role === "CUSTOMER" ? <Customer/> : <Mechanic/>}</div>
         </div>
     );
 };

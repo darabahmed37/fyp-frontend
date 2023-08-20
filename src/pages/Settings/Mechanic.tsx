@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 import "./style.css";
 import {getRequest, postRequest} from "../../utils/axios"; // Import the CSS file
 
-const Driver = () => {
+const Mechanic = () => {
     const services = useAppStore.use.services();
     const [selectedServices, setSelectedServices] = useState<IServices[]>([]);
 
@@ -83,4 +83,4 @@ const Driver = () => {
     );
 };
 
-export default Driver;
+export default Mechanic;
