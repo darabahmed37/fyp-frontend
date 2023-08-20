@@ -3,6 +3,11 @@ import { useParams } from "react-router-dom";
 import { Box, Card, CardContent, Typography } from "@mui/material";
 import { getRequest } from "../utils/axios";
 import RatingDisplay from "../components/rating";
+import {
+  calculateDistance,
+  getCurrentLocation,
+  Location,
+} from "../utils/location";
 
 const Service = () => {
   const styles = {
@@ -30,16 +35,22 @@ const Service = () => {
   };
 
   const params = useParams();
+  const [location, setLocation] = useState<Location>();
   const [mechanics, setMechanics] = useState<
     {
       user: any;
       rating: any[];
     }[]
   >([]);
-  const [rating, setRating] = useState<number>(0);
+
+  async function setLocationState() {
+    setLocation(await getCurrentLocation());
+  }
+
   useEffect(() => {
     getRequest(`/services/mechanic/${params.id}`).then((response) => {
       setMechanics(response.data);
+      setLocationState();
     });
   }, [params]);
 
@@ -61,6 +72,14 @@ const Service = () => {
               </div>
               <CardContent sx={styles.content}>
                 <Typography>Phone Number: {m.user.phoneNumber}</Typography>
+                <Typography>
+                  Distance:
+                  {location &&
+                    calculateDistance(location, {
+                      latitude: m.user.latitude,
+                      longitude: m.user.longitude,
+                    })} KM
+                </Typography>
                 <RatingDisplay m={m.rating} />
               </CardContent>
             </Card>
