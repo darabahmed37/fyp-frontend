@@ -61,7 +61,7 @@ const Service = () => {
               </div>
               <CardContent sx={styles.content}>
                 <Typography>Phone Number: {m.user.phoneNumber}</Typography>
-              <RatingDisplay m={m.rating}/>
+                <RatingDisplay m={m.rating} />
               </CardContent>
             </Card>
           ))}

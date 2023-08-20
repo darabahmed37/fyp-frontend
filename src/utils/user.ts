@@ -1,33 +1,33 @@
 import axios from "utils/axios";
-import {User} from "utils/types";
+import { User } from "utils/types";
 
 export function setAccessToken(accessToken: string) {
-    localStorage.removeItem("access");
+  localStorage.removeItem("access");
 
-    localStorage.setItem("access", accessToken);
+  localStorage.setItem("access", accessToken);
 }
 
 export function getAccessToken() {
-    return localStorage.getItem("access");
+  return localStorage.getItem("access");
 }
 
 export function setRefreshToken(refreshToken: string) {
-    localStorage.removeItem("refresh");
-    localStorage.setItem("refresh", refreshToken);
+  localStorage.removeItem("refresh");
+  localStorage.setItem("refresh", refreshToken);
 }
 
 export function getRefreshToken() {
-    return localStorage.getItem("refresh");
+  return localStorage.getItem("refresh");
 }
 
 export function logOut() {
-    localStorage.clear();
-    delete axios.defaults.headers.common["Authorization"];
-    window.location.href = "/";
+  localStorage.clear();
+  delete axios.defaults.headers.common["Authorization"];
+  window.location.href = "/";
 }
 
 export function getUser() {
-    const userString = localStorage.getItem("user");
-    if (userString) return JSON.parse(userString) as User;
-    else return null;
+  const userString = localStorage.getItem("user");
+  if (userString) return JSON.parse(userString) as User;
+  else return null;
 }

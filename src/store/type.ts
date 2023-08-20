@@ -1,11 +1,11 @@
-import {IServices} from "../utils/types";
+import { IServices } from "../utils/types";
 
 export interface AppStoreStates {
-    services: IServices[];
+  services: IServices[];
 }
 
 interface AppStoreActions {
-    setServices: (services: IServices[]) => void;
+  setServices: (services: IServices[]) => void;
 }
 
 export type AppStoreBase = AppStoreStates & AppStoreActions;
