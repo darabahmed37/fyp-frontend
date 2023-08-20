@@ -47,7 +47,7 @@ const routes: IRoute[] = [
             },
             {
                 element: <Service/>,
-                path: "service/:service",
+                path: "service/:id",
             },
             {
                 path: "settings",

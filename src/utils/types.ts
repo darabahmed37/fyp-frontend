@@ -9,6 +9,7 @@ export type User = {
     username: string;
 };
 
+
 export interface IServices {
     image: string;
     description: string;

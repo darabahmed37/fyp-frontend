@@ -35,13 +35,13 @@ const Driver = () => {
         });
     };
     useEffect(() => {
-        getRequest("/driver/services").then(response => {
+        getRequest("/mechanic/services").then(response => {
             setSelectedServices(response.data)
         });
     }, []);
 
     function saveServices() {
-        postRequest("/driver/save-services", selectedServices).then(() => {
+        postRequest("/mechanic/save-services", selectedServices).then(() => {
             alert("services updated");
         });
     }
