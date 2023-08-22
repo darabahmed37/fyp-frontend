@@ -40,7 +40,7 @@ const MechanicProfile = () => {
             {
               latitude: Number(currentLocation.latitude),
               longitude: Number(currentLocation.longitude),
-            }
+            },
           )}{" "}
         KM
       </Typography>
