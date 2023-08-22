@@ -12,7 +12,8 @@ import { IServices } from "../../utils/types";
 import Button from "@mui/material/Button";
 
 import "./style.css";
-import { getRequest, postRequest } from "../../utils/axios"; // Import the CSS file
+import { getRequest, postRequest } from "../../utils/axios";
+import ComponentTextArea from "../../components/text-area"; // Import the CSS file
 
 const Mechanic = () => {
   const services = useAppStore.use.services();
@@ -86,6 +87,8 @@ const Mechanic = () => {
           Save
         </Button>
       </FormControl>
+
+      <ComponentTextArea/>
     </Box>
   );
 };

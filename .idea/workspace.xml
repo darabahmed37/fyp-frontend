@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d128cdf-1cce-43aa-90e9-1eb5f2f80508" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/ServicesCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/text-area.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Settings/Mechanic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Settings/Mechanic.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/mechanic-profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mechanic-profile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/location.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/location.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +126,7 @@
       <workItem from="1692533093187" duration="7299000" />
       <workItem from="1692547665746" duration="6734000" />
       <workItem from="1692682860232" duration="1958000" />
+      <workItem from="1692695738328" duration="2580000" />
     </task>
     <servers />
   </component>

@@ -53,5 +53,5 @@ export function calculateDistance(point1: Location, point2: Location): number {
 
   const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 
-  return earthRadiusKm * c;
+  return Number((earthRadiusKm * c).toFixed(2));
 }
