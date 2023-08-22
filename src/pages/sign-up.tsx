@@ -165,9 +165,9 @@ function SignUp() {
           helperText={errors["Email"]?.message}
         />
 
-        <Select required fullWidth {...register("Role")} >
+        <Select required fullWidth {...register("Role")}>
           {option.map((data, index) => (
-            <MenuItem key={index} value={data} >
+            <MenuItem key={index} value={data}>
               {data}
             </MenuItem>
           ))}

@@ -11,6 +11,7 @@ import {
 import { Call, More } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 import { useAppStore } from "../store";
+import ServicesCard from "../components/ServicesCard";
 
 const Dashboard = () => {
   const items = useAppStore.use.services();
@@ -58,44 +59,7 @@ const Dashboard = () => {
           paddingTop: "2em",
         }}
       >
-        {items.map((it, index) => (
-          <Card
-            onClick={() => {
-              navigate(`service/${it.id}`);
-            }}
-            key={index}
-            sx={{
-              maxWidth: "300px",
-              padding: "2em 1.4em",
-              margin: "auto",
-              cursor: "pointer",
-              transition: "transform 0.3s ease",
-              userSelect: "none",
-              "&:hover": {
-                transform: "scale(1.04)",
-              },
-            }}
-          >
-            <CardMedia
-              component={"img"}
-              image={`${process.env.REACT_APP_BASE_BACKEND_URL}/services/${it.image}`}
-              sx={{
-                objectFit: "contain",
-                maxHeight: "150px",
-              }}
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                {it.title}
-              </Typography>
-              <Typography variant={"subtitle2"} color="text.secondary">
-                {it.description.length > 250
-                  ? it.description.substring(0, 250) + "..."
-                  : it.description}
-              </Typography>
-            </CardContent>
-          </Card>
-        ))}
+        <ServicesCard items={items} />
       </Box>
     </Box>
   );

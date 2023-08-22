@@ -20,7 +20,7 @@ const Service = () => {
       "&:hover": {
         transform: "scale(1.03)",
         boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
-        cursor:"pointer"
+        cursor: "pointer",
       },
     },
     header: {

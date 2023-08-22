@@ -4,4 +4,4 @@ import Dashboard from "pages/Dashboard";
 import Service from "pages/Service";
 import Settings from "pages/Settings";
 import MechanicProfile from "./mechanic-profile";
-export { SignUp, SignIn, Dashboard, Service, Settings ,MechanicProfile};
+export { SignUp, SignIn, Dashboard, Service, Settings, MechanicProfile };

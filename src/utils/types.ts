@@ -15,3 +15,17 @@ export interface IServices {
   title: string;
   id: string;
 }
+
+export type Rating = {
+  id: number;
+  stars: number;
+  fromId: any;
+  toId: any;
+};
+
+export type Mechanic = {
+  id: number;
+  user: User;
+  services: IServices[];
+  rating: Rating[];
+};
