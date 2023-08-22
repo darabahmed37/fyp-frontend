@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Box, Card, CardContent, Typography } from "@mui/material";
 import { getRequest } from "../utils/axios";
 import RatingDisplay from "../components/rating";
@@ -20,6 +20,7 @@ const Service = () => {
       "&:hover": {
         transform: "scale(1.03)",
         boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
+        cursor:"pointer"
       },
     },
     header: {
@@ -33,7 +34,7 @@ const Service = () => {
       padding: "16px",
     },
   };
-
+  const navigate = useNavigate();
   const params = useParams();
   const [location, setLocation] = useState<Location>();
   const [mechanics, setMechanics] = useState<
@@ -66,7 +67,14 @@ const Service = () => {
           }}
         >
           {mechanics.map((m, index) => (
-            <Card key={index} variant="outlined" sx={styles.card}>
+            <Card
+              key={index}
+              variant="outlined"
+              sx={styles.card}
+              onClick={() => {
+                navigate("/profile/" + m.user.id);
+              }}
+            >
               <div style={styles.header}>
                 <Typography variant="h6">{m.user.name}</Typography>
               </div>
@@ -78,7 +86,8 @@ const Service = () => {
                     calculateDistance(location, {
                       latitude: m.user.latitude,
                       longitude: m.user.longitude,
-                    })} KM
+                    })}{" "}
+                  KM
                 </Typography>
                 <RatingDisplay m={m.rating} />
               </CardContent>

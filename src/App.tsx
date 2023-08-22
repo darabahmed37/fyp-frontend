@@ -2,7 +2,14 @@ import { FC, ReactNode } from "react";
 import { ThemeProvider } from "@mui/material";
 import theme from "./theme";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import { Dashboard, Service, Settings, SignIn, SignUp } from "pages";
+import {
+  Dashboard,
+  MechanicProfile,
+  Service,
+  Settings,
+  SignIn,
+  SignUp,
+} from "pages";
 import { RoutesLink } from "routes";
 import Authentication from "layout/Authentication";
 import { PrivateRoutes, PublicRoutes } from "components/protected";
@@ -57,6 +64,10 @@ const routes: IRoute[] = [
       {
         path: "about",
         element: <AboutPage />,
+      },
+      {
+        path: "profile/:id",
+        element: <MechanicProfile />,
       },
     ],
   },
