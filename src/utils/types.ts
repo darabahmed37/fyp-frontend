@@ -28,4 +28,5 @@ export type Mechanic = {
   user: User;
   services: IServices[];
   rating: Rating[];
+  about:string
 };

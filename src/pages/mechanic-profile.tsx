@@ -9,6 +9,7 @@ import {
   getCurrentLocation,
   Location,
 } from "../utils/location";
+import RatingDisplay from "../components/rating";
 
 const MechanicProfile = () => {
   const { id } = useParams();
@@ -27,8 +28,9 @@ const MechanicProfile = () => {
 
   return profile ? (
     <Box>
-      <Typography variant="h4">Name: {profile.user.name}</Typography>
+      <Typography variant="h5">Name: {profile.user.name}</Typography>
       <Typography>ID: {profile.id}</Typography>
+
       <Typography>
         Distance from me:{" "}
         {currentLocation &&
@@ -44,6 +46,8 @@ const MechanicProfile = () => {
           )}{" "}
         KM
       </Typography>
+      <RatingDisplay m={profile.rating} />
+      <Typography variant={"subtitle1"}>{profile.about}</Typography>
       <Box
         sx={{
           bgcolor: "#e2e2e2",

@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Card,
-  CardContent,
-  CardMedia,
-  IconButton,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Box, IconButton, Stack, Typography } from "@mui/material";
 import { Call, More } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 import { useAppStore } from "../store";

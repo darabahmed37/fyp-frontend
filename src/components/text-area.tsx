@@ -13,6 +13,14 @@ const ComponentTextArea = () => {
   };
 
   const handleSave = async () => {
+    if (text.length === 0) {
+      toast.error("Empty About Cannot be added", {
+        position: toast.POSITION.TOP_RIGHT,
+        autoClose: 3000, // Auto close after 3 seconds
+        theme: "colored",
+      });
+      return
+    }
     await postRequest("/mechanic/add-about", {
       about: text,
     });
