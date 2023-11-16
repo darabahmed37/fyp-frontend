@@ -13,7 +13,7 @@ export const PrivateRoutes = () => {
         setItems(response.data);
       });
     }
-  }, [setItems]);
+  }, [setItems,auth]);
 
   return auth ? <Outlet /> : <Navigate to={RoutesLink.LOGIN} />;
 };

@@ -1,13 +1,11 @@
 import React from "react";
 import { Box, IconButton, Stack, Typography } from "@mui/material";
 import { Call, More } from "@mui/icons-material";
-import { useNavigate } from "react-router-dom";
 import { useAppStore } from "../store";
 import ServicesCard from "../components/ServicesCard";
 
 const Dashboard = () => {
   const items = useAppStore.use.services();
-  const navigate = useNavigate();
 
   const user = JSON.parse(localStorage.getItem("user") as string);
 
@@ -26,7 +24,7 @@ const Dashboard = () => {
         >
           <IconButton>
             <Call />
-              <Typography>{user.phoneNumber}</Typography>
+            <Typography>{user.phoneNumber}</Typography>
           </IconButton>
           <Box
             sx={{

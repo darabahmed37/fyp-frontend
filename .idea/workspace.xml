@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d128cdf-1cce-43aa-90e9-1eb5f2f80508" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/mechanic-profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mechanic-profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/change-password.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/change-password.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/protected.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/protected.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/location.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/location.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,8 +62,8 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/home/darab/.nvm/versions/node/v18.17.1/lib/node_modules/prettier",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Diff & Merge",
+    "prettierjs.PrettierConfiguration.Package": "/home/dev/.nvm/versions/node/v16.20.2/lib/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
     "ts.external.directory.path": "/home/dev/Downloads/fyp/fyp-frontend/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   },
@@ -97,6 +100,9 @@
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7d128cdf-1cce-43aa-90e9-1eb5f2f80508" name="Changes" comment="" />
@@ -125,7 +131,7 @@
       <workItem from="1692786468513" duration="341000" />
       <workItem from="1692871362581" duration="502000" />
       <workItem from="1693121330969" duration="3237000" />
-      <workItem from="1700146063249" duration="3832000" />
+      <workItem from="1700146063249" duration="4599000" />
     </task>
     <servers />
   </component>
@@ -142,5 +148,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="change location timeout" />
   </component>
 </project>

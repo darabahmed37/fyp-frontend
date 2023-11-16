@@ -25,14 +25,12 @@ export function getCurrentLocation(): Promise<Location> {
                         // User denied access to their location
                         reject("Location access denied.");
                         toast.error("Error with Location Permission")
-                    } else  if (error.code==error.TIMEOUT){
+                    } else if (error.code === error.TIMEOUT) {
                         reject("Error getting location: " + error.message);
-                       toast.error("ERROR with Device GPS")
+                        toast.error("ERROR with Device GPS")
                     }
                 }
-                , {
-                    timeout:5000
-                });
+            );
         } else {
             reject("Geolocation is not supported by this browser.");
             toast.error("Device is not able to return location")
