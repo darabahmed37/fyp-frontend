@@ -62,12 +62,13 @@ const MechanicProfile = () => {
                 {currentLocation ?
                     calculateDistance(
                         {
-                            latitude: Number(profile.user.latitude),
-                            longitude: Number(profile.user.longitude),
+
+                            latitude: +profile.user.latitude,
+                            longitude: +profile.user.longitude,
                         },
                         {
-                            latitude: Number(currentLocation.latitude),
-                            longitude: Number(currentLocation.longitude),
+                            latitude: +currentLocation.latitude,
+                            longitude: +currentLocation.longitude,
                         },
                     ) : "0"}{" "}
                 KM

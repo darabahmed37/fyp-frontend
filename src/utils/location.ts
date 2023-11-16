@@ -6,6 +6,7 @@ export interface Location {
 }
 
 export function getCurrentLocation(): Promise<Location> {
+
   return new Promise((resolve, reject) => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
@@ -50,8 +51,8 @@ function degreesToRadians(degrees: number): number {
 export function calculateDistance(point1: Location, point2: Location): number {
   const earthRadiusKm = 6371; // Earth's radius in kilometers
 
-  const dLat = degreesToRadians(point2.latitude - point1.latitude);
-  const dLon = degreesToRadians(point2.longitude - point1.longitude);
+  const dLat = degreesToRadians(+point2.latitude - point1.latitude);
+  const dLon = degreesToRadians(+point2.longitude - point1.longitude);
 
   const lat1Rad = degreesToRadians(point1.latitude);
   const lat2Rad = degreesToRadians(point2.latitude);
