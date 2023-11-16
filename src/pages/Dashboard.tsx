@@ -9,6 +9,8 @@ const Dashboard = () => {
   const items = useAppStore.use.services();
   const navigate = useNavigate();
 
+  const user = JSON.parse(localStorage.getItem("user") as string);
+
   return (
     <Box>
       <Box
@@ -24,6 +26,7 @@ const Dashboard = () => {
         >
           <IconButton>
             <Call />
+              <Typography>{user.phoneNumber}</Typography>
           </IconButton>
           <Box
             sx={{
