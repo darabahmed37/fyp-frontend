@@ -1,9 +1,9 @@
 import React from "react";
 import { toast } from "react-toastify";
-import { TextField, Button } from "@mui/material";
+import {TextField, Button, Typography} from "@mui/material";
 import { changePassword } from "../../api/change-password";
 
-const ChangePasswordForm = () => {
+export const ChangePasswordForm = () => {
   const handleSubmit = (event: any) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -32,8 +32,11 @@ const ChangePasswordForm = () => {
         justifyContent: "center",
         maxWidth: "40em",
         gap: "1em",
+          marginTop:"1em"
       }}
     >
+      <Typography fontWeight={"500"}>Change Password</Typography>
+
       <TextField
         id="new-password"
         label="New Password"

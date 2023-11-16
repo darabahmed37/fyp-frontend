@@ -13,7 +13,8 @@ import Button from "@mui/material/Button";
 
 import "./style.css";
 import { getRequest, postRequest } from "../../utils/axios";
-import TextArea from "../../components/text-area"; // Import the CSS file
+import TextArea from "../../components/text-area";
+import {ChangePasswordForm} from "./Customer"; // Import the CSS file
 
 const Mechanic = () => {
   const services = useAppStore.use.services();
@@ -89,7 +90,9 @@ const Mechanic = () => {
       </FormControl>
 
       <TextArea />
+        <ChangePasswordForm/>
     </Box>
+
   );
 };
 
