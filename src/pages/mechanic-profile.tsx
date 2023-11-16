@@ -43,10 +43,11 @@ const MechanicProfile = () => {
     useEffect(() => {
 
         if (id) {
+            getRequest(`/mechanic/${id}`).then(async (response) => {
+                setProfile((prevState) => response.data);
 
-            getRequest(`/mechanic/${id}`).then((response) => {
-                setProfile(response.data);
-                getCurrentLocation().then((location) => setCurrentLocation(location));
+                let temp = await getCurrentLocation()
+                setCurrentLocation(temp)
             });
         }
     }, [id]);
